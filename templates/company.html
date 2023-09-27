@@ -1,0 +1,233 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Nextby is an accounting and bookkeeping company in Finland. We also provide Web Design, Back-end Development, Graphics Design, and Digital Marketing Services."
+    />
+    <meta
+      name="keywords"
+      content="Bookkeeping near me, Bookkeeping in Helsinki, Digital Marketing in Finland"
+    />
+    <meta name="author" content="Nextby" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <link rel="shortcut icon" type="image/png" href="img/nextby-favicon.png" />
+    <script defer src="js/script.js"></script>
+    <title>
+      Nextby Accounting and Bookkeeping for Startups and Small Enterprises.
+    </title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/"
+          ><img src="{% static 'img/nextby-white.png' %}" alt="Nextby Logo" class="nav__logo"
+        /></a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="/#section-services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="/#section-tours" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Bookkeeping Services</span>
+          <span class="heading-primary--sub"
+            >Low cost, fixed fee for just €29 a month.</span
+          >
+        </h1>
+      </div>
+
+      <div class="header__seenon">
+        <div class="header__seenon-text">Our Partners</div>
+        <div class="header__seenon-logos">
+          <img src="{% static 'img/Wolt-Logo.png' %}" alt="Nextby partner logo 1" />
+          <img src="{% static 'img/foodora.png' %}" alt="Nextby partner logo 2" />
+          <img src="{% static 'img/jp.png' %}" alt="Nextby partner logo 3" />
+          <img src="{% static 'img/Webily-LogoWhite.png' %}" alt="Nextby partner logo 4" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="privacy">
+        <h1 class="heading-tertiary u-margin-bottom-small">Company Overview</h1>
+
+        <p class="paragraph">
+          "Nextby- always your nearby" with this moto we have started our
+          journey. Nextby offers low-cost and cloud-based bookkeeping and
+          accounting for small businesses in Finland. Our Office is located in
+          Helsinki but we welcome clients from all over the Finland!
+        </p>
+
+        <p class="paragraph">
+          We charge fixed monthly fees for our bookkeeping services, so you will
+          not be surprised. We handle limited number of company, so there is no
+          rush. We take our time to manage everything. Accuracy and Quality are
+          our priorities. Our bookkeeping service packages will be fit to your
+          specific needs.
+        </p>
+
+        <p class="paragraph">
+          We provide a high level of customer support to ensure complete
+          satisfaction. You can contact your accountant via email, phone, chat,
+          or meet them in person.
+        </p>
+
+        <p class="paragraph">
+          We are a modern, electronic accounting firm and keep our service
+          simple and afforedable. We use free Google Drive for accounting
+          material delivery and cloud storing. Just add your receipts to Google
+          Drive and our accountants will take it from there.
+        </p>
+
+        <p class="paragraph">
+          Information is handed over to the authorities in accordance with
+          current legislation. If the service provided to the customer requires
+          partial outsourcing to a third party to implement the service, we
+          ensure adequate protection and confidentiality of personal data.
+          Adcount does not sell personal data to third parties.
+        </p>
+
+        <p class="paragraph">
+          Find your local accountant today! We'll be happy to help you with all
+          tax related problems from company set up in Finland to closing of
+          business.
+        </p>
+
+        <p class="paragraph">
+          The user can send inquiries related to data protection and this data
+          protection clause to the accounting firm in writing. We are constantly
+          developing our services and reserve the right to change this privacy
+          statement by announcing it in our services. Changes can also be based
+          on changes in legislation. We recommend that you familiarize yourself
+          with the content of the privacy statement regularly.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source
+            srcset="
+            {% static 'img/nextby-white-small-1x.png' %} 1x,
+            {% static 'img/nextby-white-small-2x.png' %} 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="{% static 'img/nextby-white-1x.png' %}img/nextby-white-1x.png 1x, {% static 'img/nextby-white.png' %} 2x"
+            alt="Full logo"
+            src="{% static 'img/nextby-white.png' %}"
+          />
+        </picture>
+        <p>always your nearby</p>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="/company." class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="/contact" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="/careers" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="/privacy" class="footer__link">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contact">
+            <ul class="footer__contact--info">
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-solid fa-envelope-circle-check footer__contact-icon"
+                ></i>
+                Email: sales@nextby.fi
+              </li>
+              <li class="footer__contact--info-list">
+                <i class="fa-solid fa-phone-volume footer__contact-icon"></i>
+                Phone: +358 10 348 2540
+              </li>
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-brands fa-square-whatsapp footer__contact-icon"
+                ></i>
+                WhatsApp: +358 50 553 8518
+              </li>
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-sharp fa-solid fa-location-pin footer__contact-icon"
+                ></i>
+                Address: Käsityöläisentie 4A, 00750 Helsinki
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Copyright 2023 &copy; by Nextby. We are a Business Development
+            company in Finland. We provide Accounting Services, Business growth,
+            Consultancy, Brand Marketing, Go-to-market Strategy, Search Engine
+            Optimization (SEO), Social media marketing, Digital marketing, UI/UX
+            research and design, Development for web and app, Lead and demand
+            generation, Performance marketing, Customer acquisition and database
+            management, Workflow and marketing automation, Email marketing, and
+            Digital integration services etc.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

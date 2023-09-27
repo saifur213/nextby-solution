@@ -1,0 +1,65 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}
+.about__photo {
+  width: 550px;
+  height: 450px;
+  border-radius: 5px;
+  @include respond(tab-port) {
+    width: 100%;
+    height: 350px;
+  }
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.about-content {
+  padding: 2rem;
+}
+
+.feature-content {
+  height: auto;
+  padding: 6rem 1vw;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+}
+.feature-content::before {
+  content: "";
+  background: green;
+  display: block;
+  width: 100px;
+  height: 3px;
+}

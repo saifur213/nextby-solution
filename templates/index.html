@@ -1,0 +1,664 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Nextby is an accounting and bookkeeping service for small companies in Finland. We also provide Digital Marketing Services, Web design, and Development."
+    />
+    <meta
+      name="keywords"
+      content="Bookkeeping near me, Bookkeeping in Helsinki, Accountant helsinki, Bookkeeper helsinki, bookkeeping company in Finland,
+      bookkeeper for small business in Helsinki, Bookkeeping Services in Finland, Accounting Services for Small Business, 
+      Digital Marketing in Finland, web design in helsinki, kirjanpito, kirjanpitäjä, toiminimi kirjanpito"
+    />
+    <meta name="author" content="Nextby" />
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+
+    <title>Accounting and Bookkeeping Services for Small Businesses.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/"
+          ><img src="{% static 'img/nextby-white.png' %}" alt="Nextby Logo" class="nav__logo"
+        /></a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#section-services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#section-package" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Accounting & Bookkeeping</span>
+          <span class="heading-primary--sub"
+            >services for small businesses</span
+          >
+        </h1>
+        <div class="u-center-text u-margin-top-big">
+          <a href="#section-tours" class="btn btn--white"
+            ><strong>just €29 a month. </strong></a
+          >
+        </div>
+      </div>
+
+      <div class="header__seenon">
+        <div class="header__seenon-text">Our Partners</div>
+        <div class="header__seenon-logos">
+          <img src="{% static 'img/Wolt-Logo.png' %}" alt="Nextby partner logo wolt" />
+          <img src="{% static 'img/foodora.png' %}" alt="Nextby partner logo foodora" />
+          <img src="{% static 'img/jp.png' %}" alt="Nextby partner logo jp" />
+          <img
+            src="{% static 'img/Webily-LogoWhite.png' %}"
+            alt="Nextby partner logo webily"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Bookkeeping Services in Finland</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <div>
+              <img
+                src="{% static 'img/corporate.jpg' %}"
+                alt="Nextby Accounting and Bookkeeping Services for small businesses"
+                class="responsive-img about__photo"
+              />
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="about-content">
+              <h3 class="heading-tertiary u-margin-bottom-small">About Us</h3>
+              <p class="paragraph align-justify">
+                Nextby is a business development company in Helsinki, Finland.
+                We offer affordable accounting, reporting and payroll services
+                for entrepreneurs and small businesses. We also offer a range of
+                IT services, like Web Development, Website Design, E-commerce
+                Website Development, Mobile App, Software Solutions, Graphics
+                Design, Search Engine Optimization (SEO), Facebook & Social
+                Media Marketing, Email Marketing, Google ad words and Media
+                buying, Digital Advertising, and more.
+              </p>
+              <div class="u-center-text u-margin-top-huge">
+                <a href="/company" class="btn-text">Read more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-services" id="section-services">
+        <div class="service-text u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Our Services</h2>
+          <p class="paragraph">
+            Find out more about our technology and business automation services.
+            If you need it request a quotation to our sales team.
+          </p>
+        </div>
+        <div class="row">
+          <div class="service__container">
+            <div class="col-1-of-3">
+              <div class="service__item">
+                <div class="service__item--wrap">
+                  <div class="service__item--info">
+                    <div class="service__item--icon">
+                      <img
+                        src="{% static 'img/Blog-image.svg' %}"
+                        alt=" Nextby Bookkeeping Service"
+                      />
+                    </div>
+                  </div>
+                  <div class="service__item--content">
+                    <a href="#" target="_blank">
+                      <h3 class="service__item--content-title">Bookkeeping</h3>
+                    </a>
+
+                    <p class="service__item--content-description">
+                      Are you paying too much for accounting and bookkeeping
+                      services for your company? We offer low-price service
+                      charge for small businesses and entrepreneurs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="service__item">
+                <div class="service__item--wrap">
+                  <div class="service__item--info">
+                    <div class="service__item--icon">
+                      <img
+                        src="{% static 'img/Blog-image-1.svg' %}"
+                        alt="Nextby VAT Reporting Service"
+                      />
+                    </div>
+                  </div>
+                  <div class="service__item--content">
+                    <a href="#" target="_blank">
+                      <h3 class="service__item--content-title">
+                        VAT REPORTING
+                      </h3>
+                    </a>
+
+                    <p class="service__item--content-description">
+                      We submit VAT returns directly in the Tax Administration.
+                      We make the Income Statement and income tax return for
+                      your business at the end of the fiscal year.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="service__item">
+                <div class="service__item--wrap">
+                  <div class="service__item--info">
+                    <div class="service__item--icon">
+                      <img
+                        src="{% static 'img/Blog-image-2.svg' %}"
+                        alt="Nextby Company Formation Service"
+                      />
+                    </div>
+                  </div>
+                  <div class="service__item--content">
+                    <a href="#" target="_blank">
+                      <h3 class="service__item--content-title">
+                        SETTING UP A COMPANY
+                      </h3>
+                    </a>
+
+                    <p class="service__item--content-description">
+                      We have good experience in setting up a company in
+                      Finland. We only undertake the whole process of
+                      establishing private trader business in Finland.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="section--1">
+        <div class="section__title">
+          <h2 class="section__description">Features</h2>
+          <h3 class="section__header">
+            Everything you need in a bookkeeping service!
+          </h3>
+        </div>
+
+        <div class="features">
+          <img
+            src="{% static 'img/entrepreneur.jpg' %}"
+            data-src="{% static 'img/digital.jpg' %}"
+            alt="Everything you need in a bookkeeping service!"
+            class="features__img lazy-img item1"
+          />
+          <div class="features__feature item2">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="{% static 'img/icons.svg' %}#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Are You a Private Entrepreneur?</h5>
+            <p class="align-justify">
+              Are you a Wolt or Foodora Business Entrepreneur or other new
+              entrepreneur? Are you paying too much for your company's
+              bookkeeping? If yes, this is right place for you. We have great
+              offer for your company. Low-cost and fixed-price accounting
+              services for Wolt, Foodora entrepreneurs or any other small
+              businesses.
+            </p>
+          </div>
+
+          <div class="features__feature item3">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="{% static 'img/icons.svg' %}#icon-trending-up"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">
+              Low-Cost and Fixed Price Bookkeeping Services!
+            </h5>
+            <p class="align-justify">
+              Discover our seamless, hassle-free accounting service designed to
+              meet your needs. With utmost clarity and simplicity, we offer you
+              a fixed and budget-friendly price. Our primary focus is on
+              providing excellence from the very start, ensuring your
+              satisfaction with every step. We proudly deliver our services at
+              competitive rates. Say goodbye to expensive accounting Softwares,
+              as we keep things straightforward and user-friendly. Trust in your
+              personal accountant, who is committed to making your
+              entrepreneurial journey stress-free and successful.
+            </p>
+          </div>
+          <img
+            src="{% static 'img/pexels-mikhail-nilov-8297044.jpg' %}"
+            data-src="{% static 'img/grow.jpg' %}"
+            alt="Low-Cost and Fixed Price Bookkeeping Services"
+            class="features__img lazy-img item4"
+          />
+
+          <img
+            src="{% static 'img/pexels-mikhail-nilov-8297240.jpg' %}"
+            data-src="{% static 'img/card.jpg' %}"
+            alt="Accounting always on time and correctly"
+            class="features__img lazy-img item5"
+          />
+          <div class="features__feature item6">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="{% static 'img/icons.svg' %}#icon-credit-card"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">
+              Accounting always on time and correctly!
+            </h5>
+            <p class="align-justify">
+              We provide accounting & bookkeeping services for small companies.
+              We always contact our clients and keep the book up-to-date. In
+              cooperation with our expert accountant, your bookkeeping will
+              always be taken care of correctly and on time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-package" id="section-package">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Most popular Packages</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Bookkeeping</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>VAT Returns</li>
+                    <li>Income Statement</li>
+                    <li>Annual Tax Return</li>
+                    <li>Tax advicing</li>
+                    <li>Revenue under 100 000 €</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">
+                      <strong>€29/m </strong>
+                    </p>
+                  </div>
+                  <a href="#contact" class="btn btn--white">Contact now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Setting up a company</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Private trader</li>
+                    <li>VAT Register</li>
+                    <li>Prepayment Register</li>
+                    <li>Tax advicing</li>
+                    <li>Customer service</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value"><strong>€550</strong></p>
+                  </div>
+                  <a href="#contact" class="btn btn--white">Contact now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Business consulting</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>1-hour consultation</li>
+                    <li>Starting business</li>
+                    <li>Right company form</li>
+                    <li>Finnish corporate taxation</li>
+                    <li>Employer obligations</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value"><strong>€150</strong></p>
+                  </div>
+                  <a href="#contact" class="btn btn--white">Contact now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">HOW DOES IT WORK?</h2>
+        </div>
+        <div class="row">
+          <div class="container__box">
+            <div class="container__content">
+              <figure>
+                <img
+                  src="img/deilbox-icon-01.png"
+                  alt=""
+                  class="image-box-img"
+                />
+              </figure>
+              <div class="image__box--content">
+                <h3 class="image__box--title">MAKING AGREEMENT</h3>
+                <p class="image__box--desc">
+                  We will have a meeting first to discus about your company
+                  size, business activity, receipts per month. If everything is
+                  fine, the service begins by signing the accounting agreement.
+                </p>
+              </div>
+            </div>
+            <div class="container__content container-mid">
+              <figure>
+                <img
+                  src="{% static 'img/deilbox-icon-02.png' %}"
+                  alt=""
+                  class="image-box-img"
+                />
+              </figure>
+              <div class="image__box--content">
+                <h3 class="image__box--title">DELIVERING MATERIAL</h3>
+                <p class="image__box--desc">
+                  Once the deal is done, now You can start sending us receipts
+                  electronically by email, or google drive. If necessary, we
+                  will remind you about the missing material. That's all!
+                </p>
+              </div>
+            </div>
+            <div class="container__content">
+              <figure>
+                <img
+                  src="{% static 'img/deilbox-icon-03.png' %}"
+                  alt=""
+                  class="image-box-img"
+                />
+              </figure>
+              <div class="image__box--content">
+                <h3 class="image__box--title">WE HANDLE BOOKKEEPING</h3>
+                <p class="image__box--desc">
+                  Now Forget about accounting and keep focus on earnings! We
+                  take care of the accounting and tax returns for you. Your
+                  headache now is ours. Stay calm! stay cool! Enjoy life!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-featurebox">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="fa-solid fa-gauge feature-box__icon"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Fast</h3>
+              <p class="feature-box__text">We are fast!</p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fa-solid fa-heart-pulse"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Reliable</h3>
+              <p class="feature-box__text">We are reliable!</p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fa-solid fa-check-double"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Accurate</h3>
+              <p class="feature-box__text">We do accurate!</p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fa-solid fa-phone-volume"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                24/7 Support
+              </h3>
+              <p class="feature-box__text">We are always for you!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Send Us Message</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Business
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Individual
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green" onclick="sendM()">
+                    Next step &rarr;
+                  </button>
+                </div>
+                <p id="paragraph"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <source
+            srcset="
+            {% static 'img/nextby-white.pngimg/nextby-white-small-1x.png' %} 1x,
+            {% static 'img/nextby-white-small-2x.png' %} 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="{% static 'img/nextby-white-1x.png' %} 1x, {% static 'img/nextby-white.png' %} 2x"
+            alt="Nextby Full logo"
+            src="{% static 'img/nextby-white.png' %}"
+          />
+        </picture>
+        <p class="paragraph">always your nearby</p>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="/company" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="/contact" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="/careers" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="/privacy" class="footer__link">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contact">
+            <ul class="footer__contact--info">
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-solid fa-envelope-circle-check footer__contact-icon"
+                ></i>
+                Email: sales@nextby.fi
+              </li>
+              <li class="footer__contact--info-list">
+                <i class="fa-solid fa-phone-volume footer__contact-icon"></i>
+                Phone: +358 10 348 2540
+              </li>
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-brands fa-square-whatsapp footer__contact-icon"
+                ></i>
+                WhatsApp: +358 50 553 8518
+              </li>
+              <li class="footer__contact--info-list">
+                <i
+                  class="fa-sharp fa-solid fa-location-pin footer__contact-icon"
+                ></i>
+                Address: Käsityöläisentie 4A, 00750 Helsinki
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Copyright 2023 &copy; by Nextby. We are a Business Development
+            company in Finland. We provide Accounting Services, Business growth,
+            Consultancy, Brand Marketing, Go-to-market Strategy, Search Engine
+            Optimization (SEO), Social media marketing, Digital marketing, UI/UX
+            research and design, Development for web and app, Lead and demand
+            generation, Performance marketing, Customer acquisition and database
+            management, Workflow and marketing automation, Email marketing, and
+            Digital integration services etc.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
