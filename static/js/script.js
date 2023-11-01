@@ -265,3 +265,10 @@ const slider = function () {
   });
 };
 slider();
+
+// document.querySelector(".show-login").addEventListener("click", function(){
+//   document.querySelector(".section-registration").classList.add(".active");
+// });
+// document.querySelector(".section-registration .reg-close-btn").addEventListener("click", function(){
+//   document.querySelector(".section-registration").classList.remove(".active");
+// });

@@ -9,4 +9,6 @@ urlpatterns = [
     path('company',v.company),
     path('careers',v.career),
     path('privacy',v.privacy),
+    path('register/', v.register, name='register'), 
+    path('contact/', v.contact_view , name='contact'),
 ]

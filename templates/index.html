@@ -44,13 +44,21 @@
           <li class="nav__item">
             <a href="/contact" class="nav__link">Contact</a>
           </li>
-          <li class="nav__item">
+        
+         <li class="nav__item">
             <a class="nav__link nav__link--btn btn--show-modal" href="#"
               >Join</a
             >
-          </li>
+          </li> 
+          {% comment %} <li class="nav__item">
+            <a class="show-login" id="" href="#"
+              >Login</a
+            >
+          </li>  {% endcomment %}
         </ul>
       </nav>
+
+      
 
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -79,6 +87,31 @@
         </div>
       </div>
     </header>
+
+    <div class="section-registration">
+      <div class="reg-close-btn">&times;</div>
+      <div class="reg-form">
+        <h2>Login</h2>
+        <div class="reg-form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email">
+        </div>
+        <div class="reg-form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password">
+        </div>
+        <div class="reg-form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember Me</label>
+        </div>
+        <div class="reg-form-element">
+          <button>Sign In</button>
+        </div>
+        <div class="reg-form-element">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div> 
 
     <main>
       <section class="section-about">
@@ -407,7 +440,7 @@
             <div class="container__content">
               <figure>
                 <img
-                  src="img/deilbox-icon-01.png"
+                  src="{% static 'img/deilbox-icon-01.png' %}"
                   alt=""
                   class="image-box-img"
                 />
@@ -572,13 +605,13 @@
         <picture class="footer__logo">
           <source
             srcset="
-            {% static 'img/nextby-white.pngimg/nextby-white-small-1x.png' %} 1x,
+            {% static 'img/nextby-white.png' %} 'img/nextby-white-small-1x.png'  1x,
             {% static 'img/nextby-white-small-2x.png' %} 2x
             "
             media="(max-width: 37.5em)"
           />
           <img
-            srcset="{% static 'img/nextby-white-1x.png' %} 1x, {% static 'img/nextby-white.png' %} 2x"
+            srcset="{% static 'img/nextby-white.png' %} 2x"
             alt="Nextby Full logo"
             src="{% static 'img/nextby-white.png' %}"
           />
@@ -644,23 +677,51 @@
         </div>
       </div>
     </footer>
+
+    
+
+    
+
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
       <h2 class="modal__header">
         Open your account <br />
         in just <span class="highlight">5 minutes</span>
       </h2>
-      <form class="modal__form">
+      <form class="modal__form" method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        <label>Username</label>
+        <input type="text" name="username"/>
         <label>First Name</label>
-        <input type="text" />
+        <input type="text" name="firstname"/>
         <label>Last Name</label>
-        <input type="text" />
+        <input type="text" name="lastname"/>
         <label>Email Address</label>
-        <input type="email" />
-        <button class="btn">Next step &rarr;</button>
+        <input type="email" name="email"/>
+        <label>Password</label>
+        <input type="password" name="password1"/>
+        <label>Confirm Password</label>
+        <input type="password" name="password2"/>
+        {% comment %} <button class="btn">Next step &rarr;</button> {% endcomment %}
+        {% comment %} <button class="btn">Register</button> {% endcomment %}
+        <input type="submit" value="Register">
+        
       </form>
+      <div style="text-align: center;">
+        <h4>Already Have an Account?</h4>
+        <button class="show-login">Login</button>
+      </div>
     </div>
     <div class="overlay hidden"></div>
-    <script defer src="js/script.js"></script>
+    <script defer src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
+
+<script>
+  document.querySelector(".show-login").addEventListener("click", function(){
+    document.querySelector(".section-registration").classList.add("active");
+  });
+  document.querySelector(".section-registration .reg-close-btn").addEventListener("click", function(){
+    document.querySelector(".section-registration").classList.remove("active");
+  });
+</script>
